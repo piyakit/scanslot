@@ -6,10 +6,10 @@ const btnImg = ['/button-foot-login.png', '/button-foot-register.png']
 
 const Footer = () => {
   return (
-    <footer className='w-full justify-center flex flex-col text-white'>
-      <div className='container py-10'>
+    <footer className=' justify-center flex flex-col text-white'>
+      <div className='py-10 xs:mx-8'>
         <p className='text-[40px]'>Scanslot.io</p>
-        <p>
+        <p className='xs:text-[16px]'>
           เว็บไซต์ตัวช่วยสำหรับนักเล่นสล๊อตค่ายPG ที่ช่วยให้ผู้เล่นมีโอกาศ
           เลือกเล่นเกมส์ที่ถูกต้อง ในเวลาที่ถูกต้อง ลดความเสี่ยงลงได้ถึง 40-50%
           โดยเฉลี่ย การคำนวนของเว็บไซต์ นำข้อมูลมากจาก AI ศึกษาและคำนวนออกมา
@@ -18,24 +18,24 @@ const Footer = () => {
           แต่ทางเราแนะนำตรวจสอบข้อมูล เมนู โบนัทไทม์ จะดีที่สุด
         </p>
       </div>
-      <div className='flex flex-row wrap-footer'>
-        <div className='p-[26px] ml-20'>
+      <div className='flex 2xl:flex-row wrap-footer xs:flex-col w-full'>
+        <div className='p-[26px] ml-20 xs:ml-0 xs:p-0 flex justify-center'>
           <Image
             src='/logo.png'
             width={300}
             height={300}
             alt={''}
-            className=''
+            className='xs:w-[100px] xs:h-[100px]'
           />
         </div>
-        <div className='flex flex-col justify-center ml-16'>
-          <p>Scanslot.io</p>
-          <p>
+        <div className='flex flex-col justify-center items-center text-center xs:text-[12px]'>
+          <p className='xs:text-[12px]'>Scanslot.io</p>
+          <p className='xs:text-[12px]'>
             ระบบประมวลผลอัตโนมัติ โดยใช้ AI คำนวนข้อมูลจากผู้เล่นทั้งหมด
             และประมวลผลออกมา ได้ความน่าจะเป็นมากที่สุดถึง 98%
           </p>
         </div>
-        <div className='flex flex-col justify-center'>
+        <div className='flex 2xl:flex-col xs:flex-row justify-center xs:mx-[40px]'>
           {btnImg.map((v, i) => (
             <Link
               href={''}
@@ -47,8 +47,8 @@ const Footer = () => {
           ))}
         </div>
       </div>
-      <div className='2xl:py-2 border-y-4 bg-footer w-full justify-center flex'>
-        <p>Copyright 2023 Scanslot.io , All Rights Reserved.</p>
+      <div className='2xl:py-2 border-y-4 bg-footer w-full justify-center flex items-center bg-[#78C54F]'>
+        <p className='xs:text-[12px] text-center xs:mt-2'>Copyright 2023 Scanslot.io , All Rights Reserved.</p>
       </div>
     </footer>
   )

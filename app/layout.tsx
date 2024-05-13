@@ -19,9 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={`${prompt.className} bg-bgimg bg-fixed xs:mx-4`}>
+      <body className={`${prompt.className} bg-bgimg bg-fixed`}>
         <Navbar />
-        <Container>{children}</Container>
+        <div className='xs:mx-4'>
+          <Container>{children}</Container>
+        </div>
         <Footer />
       </body>
     </html>
