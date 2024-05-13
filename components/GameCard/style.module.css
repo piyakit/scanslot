@@ -1,0 +1,38 @@
+.g_cover {
+  display: block;
+  width: 100%;
+  height: 180px;
+  background-repeat: no-repeat !important;
+  background-position: 50% 50% !important;
+  background-size: cover !important;
+}
+
+.g_reflect {
+  display: block;
+  width: 100%;
+  height: 180px;
+  background-repeat: no-repeat !important;
+  background-position: 50% 50% !important;
+  background-size: cover !important;
+  transform: rotate(180deg) scaleX(-1);
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0, transparent),
+    color-stop(0.6, transparent),
+    color-stop(0.94, #000),
+    color-stop(1, #000)
+  );
+}
+
+.g_bg {
+  height: calc(100% - 180px);
+  transition: height 0.3s ease;
+  display: block;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  opacity: 0.3;
+}
