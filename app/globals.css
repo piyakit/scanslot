@@ -14,7 +14,7 @@
 }
 
 .flipX {
-  animation: 2s anim-flipX ease infinite;
+  animation: 2s flipX ease infinite;
 }
 
 @keyframes flipX {
