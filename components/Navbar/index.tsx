@@ -122,7 +122,7 @@ const Navbar = () => {
                 alt={''}
                 width={200}
                 height={200}
-                className='w-[11vw] h-[11vw] xs:w-[30] xs:h-[30px] xs:mt-9 2xl:hidden'
+                className='w-[11vw] h-[11vw] xs:w-[30px] xs:h-[30px] xs:mt-9 2xl:hidden'
               />
             </Link>
             <Image
