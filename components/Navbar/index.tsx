@@ -138,22 +138,26 @@ const Navbar = () => {
               {isOpen ? (
                 <IoMdClose
                   onClick={() => setIsOpen(!isOpen)}
-                  className={`${isOpen ? 'text-white': 'text-white'}`}
+                  className={`${isOpen ? 'text-white' : 'text-white'} transition duration-500 ease-in`}
                 />
               ) : (
                 <RxHamburgerMenu
                   onClick={() => setIsOpen(!isOpen)}
-                  className={`${isOpen ? 'text-white': 'text-white'}`}
+                  className={`${isOpen ? 'text-white' : 'text-white'} transition duration-500 ease-in`}
                 />
               )}
             </div>
 
             {isOpen ? (
-              <div className='bg-[#0d830a] z-10 absolute left-[50px] w-[500px] h-screen'>
-                <ul className='flex flex-col pr-[300px] pt-[100px]'>
+              <div className={`bg-[#0d830a] z-[0] absolute left-[50px] w-[500px] h-screen transition duration-500 ease-in ${isOpen ? 'left-[20px]' : 'left-[-490px]'}`}>
+                <ul className='flex flex-col pr-[300px] pt-[80px]'>
                   {menuMobile.map((menu) => (
                     <li key={menu.id}>
-                      <Link href={menu.href} key={menu.id} className='no-underline text-white'>
+                      <Link
+                        href={menu.href}
+                        key={menu.id}
+                        className='no-underline text-white'
+                      >
                         {menu.title}
                       </Link>
                     </li>
