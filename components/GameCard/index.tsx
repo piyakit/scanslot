@@ -67,7 +67,7 @@ const GameCard: React.FC<GameCardProps> = ({
             height={60}
             className='object-cover'
           />
-          <div className='flex flex-col justify-center items-center py-3 text-start'>
+          <div className='flex flex-col justify-center items-center py-3 text-center'>
             <b className='block text-[18px] text-white leading-[20px]'>
               {title}
             </b>
