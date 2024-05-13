@@ -33,7 +33,7 @@ const GameCard: React.FC<GameCardProps> = ({
         className={`${style.g_bg} rounded-b-xl`}
         style={{ background: color }}
       ></div>
-      <div className={`absolute z-[5] top-[200px] px-4`}>
+      <div className={`absolute z-[5] top-[180px] px-4 backdrop-blur-[8px]`}>
         <div className='flex items-center justify-center'>
           <Image
             src={logo}
@@ -42,8 +42,8 @@ const GameCard: React.FC<GameCardProps> = ({
             height={60}
             className='object-cover'
           />
-          <div className='pl-8 flex flex-col justify-center items-center'>
-            <b className='block text-[18px] text-white leading-[20px]'>
+          <div className='pl-8 flex flex-col justify-center items-center py-2'>
+            <b className='block text-[18px] text-white leading-[20px] mt-2'>
               {title}
             </b>
             <span className='text-white text-[12px] opacity-50'>
