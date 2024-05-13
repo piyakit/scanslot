@@ -8,3 +8,45 @@
   box-sizing: border-box;
 }
 
+.shake {
+  animation: ani_shake 0.7s;
+  animation-iteration-count: infinite;
+}
+
+.flipX {
+  animation: 2s anim-flipX ease infinite;
+}
+
+@keyframes flipX {
+   {
+    opacity: 0;
+    transform: rotateX(90def);
+  }
+
+  50% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(720deg);
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  75% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

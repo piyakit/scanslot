@@ -37,7 +37,13 @@ const GameCard: React.FC<GameCardProps> = ({
       ? 'warning'
       : 'success'
   return (
-    <div className='h-[400px] w-[325px] relative block'>
+    <div
+      className={`h-[400px] w-[325px] relative block`}
+      style={{
+        animation: percent >= 90 ? 'shake 0.7s' : '',
+        animationIterationCount: percent >= 70 ? 'infinite' : '',
+      }}
+    >
       <div
         className={`${style.g_cover} h-[180px] rounded-t-xl`}
         style={{ backgroundImage: `url(${img})` }}
@@ -50,7 +56,9 @@ const GameCard: React.FC<GameCardProps> = ({
         className={`${style.g_bg} rounded-b-xl`}
         style={{ background: color }}
       ></div>
-      <div className={`absolute z-[5] top-[180px] px-3 backdrop-blur-[8px] pt-2`}>
+      <div
+        className={`absolute z-[5] top-[180px] px-3 backdrop-blur-[8px] pt-2`}
+      >
         <div className='flex items-center justify-center'>
           <Image
             src={logo}
@@ -79,7 +87,7 @@ const GameCard: React.FC<GameCardProps> = ({
           <div className='flex flex-col'>
             {hours === 0 && minutes <= 59 ? (
               <span
-                className={`text-white text-[13px]  ${prompt.className} ${style.flipX}`}
+                className={`text-white text-[13px] flipX  ${prompt.className} `}
               >{`${minutes} นาที`}</span>
             ) : (
               <span
