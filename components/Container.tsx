@@ -8,7 +8,7 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
       className='
       border-purple-600
         border-8
-        my-4
+        my-16
         rounded-3xl
         shadow-[0px_0px_20px_10px_#8639c1]
         max-w-[1320px]
