@@ -134,44 +134,34 @@ const Navbar = () => {
             />
 
             {/* nav menu mobile */}
-            <div className='xs:mt-10 z-50 2xl:hidden xs:block'>
+            <div className='xs:mt-9 z-50 2xl:hidden xs:block text-white'>
               {isOpen ? (
                 <IoMdClose
                   onClick={() => setIsOpen(!isOpen)}
-                  className={`${isOpen ? 'text-white' : 'text-white'} transition duration-500 ease-in`}
+                  size={30}
+                  className=''
                 />
               ) : (
-                <RxHamburgerMenu
-                  onClick={() => setIsOpen(!isOpen)}
-                  className={`${isOpen ? 'text-white' : 'text-white'} transition duration-500 ease-in`}
-                />
+                <RxHamburgerMenu size={30} onClick={() => setIsOpen(!isOpen)} />
               )}
             </div>
-
-            {isOpen ? (
-              <div className={`bg-[#0d830a] z-[0] absolute left-[50px] w-[500px] h-screen transition-all duration-500 ease-in ${isOpen ? 'origin-right' : 'origin-left'}`}>
-                <ul className='flex flex-col pr-[300px] pt-[80px]'>
-                  {menuMobile.map((menu) => (
-                    <li key={menu.id}>
-                      <Link
-                        href={menu.href}
-                        key={menu.id}
-                        className='no-underline text-white'
-                      >
-                        {menu.title}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
-            {/* <Image
-              src='/line-icon-mobile.png'
-              alt={''}
-              width={200}
-              height={200}
-              className='w-[11vw] h-[11vw] xs:w-[30] xs:h-[30px] xs:mt-9 2xl:hidden'
-            /> */}
+            <ul
+              className={`top-0 right-0 fixed bg-[#0d830a] w-[300px] h-full pt-20 ${
+                isOpen ? 'translate-x-0' : 'translate-x-full'
+              } ease-in-out duration-500`}
+            >
+              {menuMobile.map((menu) => (
+                <li key={menu.id} className='pt-2 text-[1.2rem]'>
+                  <Link
+                    href={menu.href}
+                    key={menu.id}
+                    className='no-underline text-white'
+                  >
+                    {menu.title}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </div>
