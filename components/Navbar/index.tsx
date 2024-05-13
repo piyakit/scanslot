@@ -9,10 +9,10 @@ const Navbar = () => {
   return (
     <div className='container'>
       <div
-        className={`${style.navbar_bg} mt-16 h-[7vw] flex justify-between items-center relative`}
+        className={`${style.navbar_bg} mt-16 h-[7vw] flex justify-between items-center relative xs:mt-4`}
       >
         <div className='absolute top-[] flex flex-row justify-between w-full items-center'>
-          <ul className='flex flex-row z-[1]'>
+          <ul className='flex flex-row z-[1] xs:hidden'>
             {menuLeft.map((v, i) => (
               <li key={i} className='px-10'>
                 <p className='text-white'>{v}</p>
@@ -20,7 +20,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <ul className='flex flex-row z-[1]'>
+          <ul className='flex flex-row z-[1] xs:hidden'>
             {menuRight.map((v, i) => (
               <li key={i} className='px-10'>
                 <p className='text-white'>{v}</p>
@@ -33,7 +33,7 @@ const Navbar = () => {
               alt={''}
               width={200}
               height={200}
-              className='w-[11vw] h-[11vw]'
+              className='w-[11vw] h-[11vw] xs:w-[100px] xs:h-[100px]'
             />
           </div>
         </div>
