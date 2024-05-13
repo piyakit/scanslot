@@ -36,3 +36,7 @@
   left: 0;
   opacity: 0.3;
 }
+
+.flipX {
+  animation: 2s anim-flipX ease infinite;
+}
