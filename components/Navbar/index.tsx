@@ -134,7 +134,7 @@ const Navbar = () => {
             />
 
             {/* nav menu mobile */}
-            <div className='xs:mt-10 z-50'>
+            <div className='xs:mt-10 z-50 2xl:hidden xs:block'>
               {isOpen ? (
                 <IoMdClose
                   onClick={() => setIsOpen(!isOpen)}
@@ -149,7 +149,7 @@ const Navbar = () => {
             </div>
 
             {isOpen ? (
-              <div className={`bg-[#0d830a] z-[0] absolute left-[50px] w-[500px] h-screen transition duration-500 ease-in ${isOpen ? 'left-[20px]' : 'left-[-490px]'}`}>
+              <div className={`bg-[#0d830a] z-[0] absolute left-[50px] w-[500px] h-screen transition-all duration-500 ease-in ${isOpen ? 'origin-right' : 'origin-left'}`}>
                 <ul className='flex flex-col pr-[300px] pt-[80px]'>
                   {menuMobile.map((menu) => (
                     <li key={menu.id}>
