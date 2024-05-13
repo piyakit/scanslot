@@ -57,7 +57,7 @@ const GameCard: React.FC<GameCardProps> = ({
         style={{ background: color }}
       ></div>
       <div
-        className={`absolute z-[5] top-[180px] px-3 backdrop-blur-[8px] pt-2`}
+        className={`absolute z-[5] top-[180px] px-3 backdrop-blur-[8px] pt-2 w-full`}
       >
         <div className='flex items-center justify-center'>
           <Image
