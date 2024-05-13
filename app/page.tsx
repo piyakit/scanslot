@@ -16,8 +16,12 @@ type TGameData = {
 const gameBgColor = {
   red: '#bd0000',
   green: '#00b336',
-  yellow: '#efdb01'
+  yellow: '#efdb01',
 }
+
+const rtp = Math.floor(Math.random() * (97 - 5) + 5)
+const hours = Math.floor(Math.random() * (4-0) + 0)
+const minutes = Math.floor(Math.random() * (59-1) + 1)
 
 const gameData: TGameData[] = [
   {
@@ -27,8 +31,8 @@ const gameData: TGameData[] = [
     color: gameBgColor.green,
     title: 'Fortune Rabbit',
     desc: 'Fortune Rabbit is a 3-reel (3 rows in reels 1 and 3, and 4 rows in reel 2) video slot featuring prize symbols up to 500x. The Fortune Rabbit Feature with 8 fortune spins may be randomly triggered during any spin. Moreover, there will be only Prize symbols on the reels during the Fortune Rabbit Feature.',
-    hours: Math.floor(Math.random() * 4) + 0,
-    minutes: Math.floor(Math.random() * 58) + 0,
+    hours: Math.floor(Math.random() * (4-0) + 0),
+    minutes: Math.floor(Math.random() * (59-1) + 1),
     percent: Math.floor(Math.random() * (97 - 5) + 5),
     multiplier: 4686,
   },
@@ -39,9 +43,9 @@ const gameData: TGameData[] = [
     color: gameBgColor.red,
     title: 'Lucky Clover Lady',
     desc: 'Lucky Clover Lady is a 5 by 6 symbols combination video slot featuring sticky winning symbols, Level-up symbol and Multiplier symbol. Lucky Clover symbols may appear during any spin, and each of them will award either a Level-up symbol or a Multiplier symbol. Any 8 or more matching symbols that appear on the reels will result in a winning combination! Additionally, when 3 Scatter symbols appear on the reels, 15 free spins will be triggered.',
-    hours: Math.floor(Math.random() * 4) + 0,
-    minutes: Math.floor(Math.random() * 59) + 0,
-    percent: Math.floor(Math.random() * 97) + 5,
+    hours: Math.floor(Math.random() * (4-0) + 0),
+    minutes: Math.floor(Math.random() * (59-1) + 1),
+    percent: Math.floor(Math.random() * (97 - 5) + 5),
     multiplier: 304,
   },
   {
@@ -51,9 +55,9 @@ const gameData: TGameData[] = [
     color: gameBgColor.red,
     title: 'Fortune-OX',
     desc: 'Play “Fortune Ox” now, let the Ox bless you with good fortune and prosperity! Fortune Ox is a 3-reel, 3-row (for reel 1 and 3) and 4-row (for reel 2) video slot featuring respins until win and x10 multiplier. Fortune Ox Feature may be randomly triggered during any spin! During the Fortune Ox Feature, when the first and third reel share the same symbols, all reels will respin until there is a win! Not only that, full reels win will reward x10 wins too!',
-    hours: Math.floor(Math.random() * 4) + 0,
-    minutes: Math.floor(Math.random() * 59) + 0,
-    percent: Math.floor(Math.random() * 97) + 5,
+    hours: Math.floor(Math.random() * (4-0) + 0),
+    minutes: Math.floor(Math.random() * (59-1) + 1),
+    percent: Math.floor(Math.random() * (97 - 5) + 5),
     multiplier: 375,
   },
   {
@@ -63,9 +67,9 @@ const gameData: TGameData[] = [
     color: gameBgColor.green,
     title: 'Ways of The Qilin',
     desc: 'Ways of the Qilin is a 6-reel, 6-row video slot featuring Wilds-on-the-Way and free spins with increasing multiplier. 4 or more Scatter symbols will trigger the Free Spins Feature and each Scatter symbol will increase the free spins or win multiplier. Win more during the Free Spins feature, as each win and +1 Spin symbol will increase the win multiplier and free spins respectively!',
-    hours: Math.floor(Math.random() * 4) + 0,
-    minutes: Math.floor(Math.random() * 59) + 0,
-    percent: Math.floor(Math.random() * 97) + 5,
+    hours: Math.floor(Math.random() * (4-0) + 0),
+    minutes: Math.floor(Math.random() * (59-1) + 1),
+    percent: Math.floor(Math.random() * (97 - 5) + 5),
     multiplier: 4550,
   },
   {
@@ -75,9 +79,9 @@ const gameData: TGameData[] = [
     color: gameBgColor.green,
     title: 'Wild Bounty Showdown',
     desc: 'Wild Bounty Showdown is a 6-reel',
-    hours: Math.floor(Math.random() * 4) + 0,
-    minutes: Math.floor(Math.random() * 59) + 0,
-    percent: Math.floor(Math.random() * 97) + 5,
+    hours: Math.floor(Math.random() * (4-0) + 0),
+    minutes: Math.floor(Math.random() * (59-1) + 1),
+    percent: Math.floor(Math.random() * (97 - 5) + 5),
     multiplier: 8740,
   },
   {
@@ -87,9 +91,9 @@ const gameData: TGameData[] = [
     color: gameBgColor.red,
     title: 'Wild Bandito',
     desc: 'Wild Bandito is a 5-reel, 4-row video slot featuring Gold Framed Symbols and free spins with increasing multiplier. During the Free Spins Feature, all symbols (excluding Wild symbol and Scatter symbol) in reel 3 will appear as Gold Framed Symbols, increasing your chance for high wins! Win multiplier will be increased by 1 when there are one or more winning symbols on the reels!',
-    hours: Math.floor(Math.random() * 4) + 0,
-    minutes: Math.floor(Math.random() * 59) + 0,
-    percent: Math.floor(Math.random() * 97) + 5,
+    hours: Math.floor(Math.random() * (4-0) + 0),
+    minutes: Math.floor(Math.random() * (59-1) + 1),
+    percent: Math.floor(Math.random() * (97 - 5) + 5),
     multiplier: 156,
   },
   {
@@ -99,10 +103,34 @@ const gameData: TGameData[] = [
     color: gameBgColor.red,
     title: 'Caishen Wins',
     desc: 'Caishen Wins is a 6-reel, 5-row video slot (with an additional reel on top of reel 2, 3, 4 and 5) featuring Wilds-on-the-Way and free spins with gamble feature. Stand a chance to win up to 20 free spins and x20 multiplier when 4 or more Scatter symbols trigger the Free Spins Feature!',
-    hours: Math.floor(Math.random() * 4) + 0,
-    minutes: Math.floor(Math.random() * 59) + 0,
-    percent: Math.floor(Math.random() * 97) + 5,
+    hours: Math.floor(Math.random() * (4-0) + 0),
+    minutes: Math.floor(Math.random() * (59-1) + 1),
+    percent: Math.floor(Math.random() * (97 - 5) + 5),
     multiplier: 33,
+  },
+  {
+    id: 8,
+    img: '/games/8/b170885210395747663.png',
+    logo: '/games/8/c1708852060155610702.png',
+    color: gameBgColor.red,
+    title: 'Thai River wonders',
+    desc: 'Thai River Wonders” is a 6-reel, 5-row video slot (with an additional reel on top of reel 2, 3, 4 and 5) featuring sticky Wilds-on-the-Way and free spins with increasing multiplier. Trigger the Free Spins Feature with 12 free spins when 4 Scatter symbols appear anywhere on the reels.',
+    hours: Math.floor(Math.random() * (4-0) + 0),
+    minutes: Math.floor(Math.random() * (59-1) + 1),
+    percent: Math.floor(Math.random() * (97 - 5) + 5),
+    multiplier: 112,
+  },
+  {
+    id: 9,
+    img: '/games/8/b170885210395747663.png',
+    logo: '/games/8/c1708852060155610702.png',
+    color: gameBgColor.red,
+    title: 'Thai River wonders',
+    desc: 'Thai River Wonders” is a 6-reel, 5-row video slot (with an additional reel on top of reel 2, 3, 4 and 5) featuring sticky Wilds-on-the-Way and free spins with increasing multiplier. Trigger the Free Spins Feature with 12 free spins when 4 Scatter symbols appear anywhere on the reels.',
+    hours: Math.floor(Math.random() * (4-0) + 0),
+    minutes: Math.floor(Math.random() * (59-1) + 1),
+    percent: Math.floor(Math.random() * (97 - 5) + 5),
+    multiplier: 112,
   },
 ]
 
