@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import Container from '@/components/Container'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,10 +21,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${inter.className} bg-bgimg bg-fixed`}>
         <Navbar />
-        <div className='flex w-full justify-center'>
-          <div className='promotion  mt-10 h-[1500px]'>{children}</div>
-        </div>
-        {/* <Footer /> */}
+        <Container>{children}</Container>
       </body>
     </html>
   )

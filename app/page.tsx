@@ -4,7 +4,14 @@ import { GAMES } from '@/utils/games'
 export default function Home() {
   return (
     // <main className='flex w-screen items-center justify-center 2xl:px-[200px]'>
-    <div className='justify-center items-center my-8 gap-4 ml-5 grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 w-full h-screen'>
+    <div className='grid
+    lg:grid-cols-3
+    md:grid-cols-2
+    sm:grid-cols-2
+    xl:grid-cols-3
+    py-4
+    gap-4
+    justify-items-center'>
       {GAMES.map((game) => (
         <GameCard
           key={game.id}
