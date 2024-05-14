@@ -27,10 +27,14 @@ const BonusTime: React.FC<BonusTimeProps> = ({
       <div className='flex gap-4'>
         {game.map((v) => (
           <div className='flex flex-col' key={v.id}>
-            <Image src={v.img} alt={''} width={129} height={129} />
-            <span className='text-white mt-2 text-[13px] text-center'>
-              {v.name}
-            </span>
+            <div className='h-[129px] w-[129px]'>
+              <Image src={v.img} alt={''} width={129} height={129} />
+            </div>
+            <div className='flex justify-center items-center'>
+              <span className='text-white mt-2 text-[13px] text-center'>
+                {v.name}
+              </span>
+            </div>
           </div>
         ))}
       </div>
