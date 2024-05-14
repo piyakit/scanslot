@@ -87,12 +87,12 @@ const menuMobile = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className='2xl:mx-[15vw]'>
+    <div className='2xl:mx-[15vw] my-20'>
       <div
         className={`${style.navbar_bg} mt-16 flex justify-between items-center relative z-20 xs:mt-4`}
       >
         <div className='absolute flex flex-row justify-between w-full items-center'>
-          <ul className='flex flex-row z-[1] xs:hidden 2xl:flex 2xl:mt-8 2xl:pr-8'>
+          <ul className='flex flex-row z-[1] xs:hidden 2xl:flex 2xl:mt-4 2xl:pr-8 2xl:pl-8'>
             {menuLeft.map((v) => (
               <Link
                 key={v.id}
@@ -104,7 +104,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <ul className='flex flex-row z-[1] xs:hidden 2xl:flex 2xl:mt-8'>
+          <ul className='flex flex-row z-[1] xs:hidden 2xl:flex 2xl:mt-4'>
             {menuRight.map((v) => (
               <Link
                 key={v.id}
@@ -130,7 +130,7 @@ const Navbar = () => {
               alt={''}
               width={200}
               height={200}
-              className='w-[11vw] h-[11vw] xs:w-[100px] xs:h-[100px]'
+              className='w-[11vw] h-[11vw] xs:w-[100px] xs:h-[100px] 2xl:w-[200px] 2xl:h-[200px]'
             />
 
             {/* nav menu mobile */}
