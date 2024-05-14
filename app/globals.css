@@ -33,8 +33,6 @@ p {
   bottom: 0;
   width: 100%;
   z-index: 2;
-  width: 100%;
-  flex-direction: row;
 }
 
 .promotion {

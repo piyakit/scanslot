@@ -7,7 +7,7 @@ const btnImg = ['/button-foot-login.png', '/button-foot-register.png']
 const Footer = () => {
   return (
     <footer className=' justify-center flex flex-col text-white'>
-      <div className='py-10 xs:mx-8'>
+      <div className='py-10 xs:mx-8 2xl:mx-[300px]'>
         <p className='text-[40px]'>Scanslot.io</p>
         <p className='xs:text-[16px]'>
           เว็บไซต์ตัวช่วยสำหรับนักเล่นสล๊อตค่ายPG ที่ช่วยให้ผู้เล่นมีโอกาศ
@@ -48,7 +48,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='2xl:py-2 border-y-4 bg-footer w-full justify-center flex items-center bg-[#78C54F]'>
-        <p className='xs:text-[12px] text-center xs:mt-2'>
+        <p className='xs:text-[12px] 2xl:text-[16px] text-center xs:mt-2'>
           Copyright 2023 Scanslot.io , All Rights Reserved.
         </p>
       </div>
