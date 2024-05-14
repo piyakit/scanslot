@@ -11,7 +11,7 @@ const menuLeft = [
   {
     id: 1,
     title: 'หน้าแรก',
-    href: '',
+    href: '/',
   },
   {
     id: 2,
@@ -38,7 +38,7 @@ const menuRight = [
   {
     id: 6,
     title: 'ติดต่อแอดมิน',
-    href: '',
+    href: '/contact-admin',
   },
   {
     id: 7,
@@ -75,7 +75,7 @@ const menuMobile = [
   {
     id: 6,
     title: 'ติดต่อแอดมิน',
-    href: '',
+    href: '/contact-admin',
   },
   {
     id: 7,

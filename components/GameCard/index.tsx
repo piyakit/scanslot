@@ -38,10 +38,10 @@ const GameCard: React.FC<GameCardProps> = ({
       : 'success'
   return (
     <div
-      className={`h-[400px] w-[325px] relative block xs:w-[300px] z-[-1]`}
+      className={`h-[400px] w-[325px] relative block xs:w-[300px] z-[-1] ${percent >= 90 ? 'shake': ''}`}
       style={{
         animation: percent >= 90 ? 'shake 0.7s' : '',
-        animationIterationCount: percent >= 70 ? 'infinite' : '',
+        animationIterationCount: percent >= 90 ? 'infinite' : '',
       }}
     >
       <div
