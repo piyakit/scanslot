@@ -5,7 +5,7 @@ const Page = () => {
   return (
     <div
       className='
-          grid grid-cols-3 justify-center gap-4 py-8'
+          grid grid-cols-3 justify-center gap-4 py-8 xs:grid-cols-1'
     >
       {BONUS_TIME.map((v) => (
         <BonusTime

@@ -23,7 +23,7 @@ const BonusTime: React.FC<BonusTimeProps> = ({
   minutes,
 }) => {
   return (
-    <div className='w-[290px] h-[277px]'>
+    <div className='w-[290px] h-[277px] xs:w-[250px] xs:h-[230px]'>
       <div className='flex gap-4'>
         {game.map((v) => (
           <div className='flex flex-col' key={v.id}>
