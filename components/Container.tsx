@@ -11,13 +11,8 @@ const Container: React.FC<ContainerProps> = ({ children }) => {
         my-16
         rounded-3xl
         shadow-[inset_0px_0px_20px_10px_#8639c1]
-        max-w-[1320px]
-        container
-        mx-[500px]
-        px-[500px]
-        xs:mx-4
+        xs:mx-[-10px]
         xs:mt-4
-        2xl:max-w-[964px]
         z-10
   '
     >

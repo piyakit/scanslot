@@ -43,7 +43,7 @@ const menuRight = [
   {
     id: 7,
     title: 'โบนัสไทม์ PG',
-    href: '',
+    href: '/bonus-time',
   },
 ]
 const menuMobile = [
@@ -80,14 +80,14 @@ const menuMobile = [
   {
     id: 7,
     title: 'โบนัสไทม์ PG',
-    href: '',
+    href: '/bonus-time',
   },
 ]
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className='container'>
+    <div className='2xl:mx-[15vw]'>
       <div
         className={`${style.navbar_bg} mt-16 flex justify-between items-center relative z-20 xs:mt-4`}
       >

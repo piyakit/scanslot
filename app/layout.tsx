@@ -5,7 +5,7 @@ import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Container from '@/components/Container'
 
-const prompt = Prompt({ subsets: ['latin'], weight: ['400'] })
+const prompt = Prompt({ subsets: ['latin'], weight: ['400'], variable: '--font-prompt'  })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -21,8 +21,10 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${prompt.className} bg-bgimg bg-fixed`}>
         <Navbar />
-        <div className='xs:mx-4 2xl:mx-[22vw]'>
-          <Container>{children}</Container>
+        <div className='xs:mx-4 2xl:mx-[22vw] px-10'>
+          <Container>
+            <div className='px-10'>{children}</div>
+          </Container>
         </div>
         <Footer />
       </body>
