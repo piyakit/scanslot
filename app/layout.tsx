@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${prompt.className} bg-bgimg bg-fixed`}>
         <Navbar />
-        <div className='xs:mx-4'>
+        <div className='xs:mx-4 2xl:mx-[22vw]'>
           <Container>{children}</Container>
         </div>
         <Footer />
