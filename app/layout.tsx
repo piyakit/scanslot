@@ -23,7 +23,7 @@ export default function RootLayout({
         <Navbar />
         <div className='xs:mx-4 2xl:mx-[22vw]'>
           <Container>
-            <div className='px-10'>{children}</div>
+            {children}
           </Container>
         </div>
         <Footer />
