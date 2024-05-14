@@ -18,22 +18,22 @@ const Footer = () => {
           แต่ทางเราแนะนำตรวจสอบข้อมูล เมนู โบนัทไทม์ จะดีที่สุด
         </p>
       </div>
-      <div className='flex 2xl:flex-row wrap-footer xs:flex-col w-full'>
-        <div className='p-[26px] ml-20 xs:ml-0 xs:p-0 flex justify-center'>
+      <div className='flex 2xl:flex-row wrap-footer 2xl:justify-between xs:flex-col w-full'>
+        <div className='p-[26px] ml-20 xs:ml-0 xs:p-0 flex justify-center 2xl:ml-16'>
           <Image
             src='/logo.png'
             width={300}
             height={300}
             alt={''}
-            className='xs:w-[100px] xs:h-[100px]'
+            className='xs:w-[100px] xs:h-[100px] 2xl:w-[200px] 2xl:h-[200px]'
           />
-        </div>
-        <div className='flex flex-col justify-center items-center text-center xs:text-[12px]'>
-          <p className='xs:text-[12px]'>Scanslot.io</p>
-          <p className='xs:text-[12px]'>
-            ระบบประมวลผลอัตโนมัติ โดยใช้ AI คำนวนข้อมูลจากผู้เล่นทั้งหมด
-            และประมวลผลออกมา ได้ความน่าจะเป็นมากที่สุดถึง 98%
-          </p>
+          <div className='flex flex-col justify-center items-center text-center xs:text-[12px] 2xl:items-start 2xl:ml-8'>
+            <p className='xs:text-[12px] 2xl:text-[16px]'>Scanslot.io</p>
+            <p className='xs:text-[12px] 2xl:text-[16px]'>
+              ระบบประมวลผลอัตโนมัติ โดยใช้ AI คำนวนข้อมูลจากผู้เล่นทั้งหมด
+              และประมวลผลออกมา ได้ความน่าจะเป็นมากที่สุดถึง 98%
+            </p>
+          </div>
         </div>
         <div className='flex 2xl:flex-col xs:flex-row justify-center xs:mx-[40px]'>
           {btnImg.map((v, i) => (
@@ -48,7 +48,9 @@ const Footer = () => {
         </div>
       </div>
       <div className='2xl:py-2 border-y-4 bg-footer w-full justify-center flex items-center bg-[#78C54F]'>
-        <p className='xs:text-[12px] text-center xs:mt-2'>Copyright 2023 Scanslot.io , All Rights Reserved.</p>
+        <p className='xs:text-[12px] text-center xs:mt-2'>
+          Copyright 2023 Scanslot.io , All Rights Reserved.
+        </p>
       </div>
     </footer>
   )
