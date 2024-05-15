@@ -9,6 +9,7 @@ const Page = () => {
     >
       {BONUS_TIME.map((v) => (
         <BonusTime
+          key={v.id}
           game={v.game}
           start={v.start}
           end={v.end}
