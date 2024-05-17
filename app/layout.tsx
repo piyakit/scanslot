@@ -25,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang='en'>
       <body className={`${prompt.className} bg-bgimg bg-fixed`}>
+        <link rel='icon' href='/logo.png' sizes='any' />
         <Navbar />
         <CodeAndCredit />
         <Container className='mx-52'>{children}</Container>
