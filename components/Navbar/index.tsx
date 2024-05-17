@@ -1,14 +1,13 @@
 'use client'
 
-import React, { useState } from 'react'
-import style from './style.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import { RxHamburgerMenu } from 'react-icons/rx'
-import { IoMdClose } from 'react-icons/io'
-import { FaFacebook } from 'react-icons/fa'
+import { useState } from 'react'
 import { BsInstagram } from 'react-icons/bs'
-import { FaTelegram } from 'react-icons/fa'
+import { FaFacebook, FaTelegram } from 'react-icons/fa'
+import { IoMdClose } from 'react-icons/io'
+import { RxHamburgerMenu } from 'react-icons/rx'
+import style from './style.module.css'
 
 const menuLeft = [
   {

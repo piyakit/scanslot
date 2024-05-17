@@ -1,5 +1,4 @@
 import { cn } from '@/lib/utils'
-import { ClassNameValue } from 'tailwind-merge'
 
 type ContainerProps = {
   children: React.ReactNode

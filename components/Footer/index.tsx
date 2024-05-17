@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 
 const btnImg = ['/button-foot-login.png', '/button-foot-register.png']
 const monileMenu = [
@@ -48,7 +47,14 @@ const Footer = () => {
               key={i}
               className='hover:scale-[1.1] transition ease-in-out delay-150'
             >
-              <Image src={v} width={240} height={78} alt={''} key={i} unoptimized />
+              <Image
+                src={v}
+                width={240}
+                height={78}
+                alt={''}
+                key={i}
+                unoptimized
+              />
             </Link>
           ))}
         </div>
