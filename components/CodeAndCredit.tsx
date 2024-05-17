@@ -9,7 +9,7 @@ const menu = [
     href: '',
   },
   {
-    id: 1,
+    id: 2,
     img: '/btn_home2.png',
     href: '',
   },

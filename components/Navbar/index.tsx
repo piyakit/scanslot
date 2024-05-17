@@ -87,7 +87,7 @@ const menuMobile = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className='2xl:mx-[15vw] xs:my-6 my-16 top-[-1px] relative z-[20] xs:fixed xs:px-4 2xl:relative xs:w-full'>
+    <div className=' xs:my-6 my-16 top-[-1px] relative z-[20] xs:fixed xs:px-4 2xl:relative xs:w-full flex justify-center'>
       <div
         className={`${style.navbar_bg} mt-16 flex justify-between items-center z-[30] xs:mt-4 2xl:w-[1344px] xs:w-full`}
       >
