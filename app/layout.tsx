@@ -4,6 +4,7 @@ import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import Container from '@/components/Container'
+import CodeAndCredit from '@/components/CodeAndCredit'
 
 const prompt = Prompt({ subsets: ['latin'], weight: ['400'], variable: '--font-prompt'  })
 
@@ -21,11 +22,10 @@ export default function RootLayout({
     <html lang='en'>
       <body className={`${prompt.className} bg-bgimg bg-fixed`}>
         <Navbar />
-        <div className='xs:mx-4 2xl:mx-[22vw]'>
-          <Container>
+        <CodeAndCredit />
+          <Container className='mx-52'>
             {children}
           </Container>
-        </div>
         <Footer />
       </body>
     </html>

@@ -38,7 +38,7 @@ const menuRight = [
   {
     id: 6,
     title: 'ติดต่อแอดมิน',
-    href: '/contact-admin',
+    href: 'https://line.me/R/ti/p/@LUCK55',
   },
   {
     id: 7,
@@ -87,11 +87,11 @@ const menuMobile = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className='2xl:mx-[15vw] my-20'>
+    <div className='2xl:mx-[15vw] xs:my-6 my-16 top-[-1px] relative z-[20] xs:fixed xs:px-4 2xl:relative xs:w-full'>
       <div
-        className={`${style.navbar_bg} mt-16 flex justify-between items-center relative z-20 xs:mt-4`}
+        className={`${style.navbar_bg} mt-16 flex justify-between items-center z-[30] xs:mt-4 2xl:w-[1344px] xs:w-full`}
       >
-        <div className='absolute flex flex-row justify-between w-full items-center'>
+        <div className='flex flex-row justify-between w-full items-center'>
           <ul className='flex flex-row z-[1] xs:hidden 2xl:flex 2xl:mt-4 2xl:pr-8 2xl:pl-8'>
             {menuLeft.map((v) => (
               <Link
@@ -104,18 +104,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <ul className='flex flex-row z-[1] xs:hidden 2xl:flex 2xl:mt-4'>
-            {menuRight.map((v) => (
-              <Link
-                key={v.id}
-                href={v.href}
-                className='text-white no-underline'
-              >
-                <li className='2xl:px-4 2xl:mr-8'>{v.title}</li>
-              </Link>
-            ))}
-          </ul>
-          <div className='flex flex-row justify-between 2xl:justify-center absolute w-full z-[0] xs:px-4'>
+          <div className='flex flex-row justify-between xs:w-full 2xl:w-auto 2xl:justify-center z-[0] xs:px-4'>
             <Link href='https://line.me/R/ti/p/@LUCK55' target='_blank'>
               <Image
                 src='/line-icon-mobile.png'
@@ -125,16 +114,18 @@ const Navbar = () => {
                 className='w-[11vw] h-[11vw] xs:w-[30px] xs:h-[30px] xs:mt-9 2xl:hidden'
               />
             </Link>
-            <Image
-              src='/nav-logo.png'
-              alt={''}
-              width={200}
-              height={200}
-              className='w-[11vw] h-[11vw] xs:w-[100px] xs:h-[100px] 2xl:w-[200px] 2xl:h-[200px]'
-            />
+            <div className=' 2xl:top-[-100px]'>
+              <Image
+                src='/nav-logo.png'
+                alt={''}
+                width={200}
+                height={200}
+                className='w-[11vw] h-[11vw] xs:w-[100px] xs:h-[100px] 2xl:w-[200px] 2xl:h-[200px]'
+              />
+            </div>
 
             {/* nav menu mobile */}
-            <div className='xs:mt-9 z-50 2xl:hidden xs:block text-white'>
+            <div className='xs:mt-9 xs:mr-0 z-50 2xl:hidden xs:block text-white'>
               {isOpen ? (
                 <IoMdClose
                   onClick={() => setIsOpen(!isOpen)}
@@ -163,6 +154,19 @@ const Navbar = () => {
               ))}
             </ul>
           </div>
+
+          <ul className='flex flex-row z-[1] xs:hidden 2xl:flex 2xl:mt-4'>
+            {menuRight.map((v) => (
+              <Link
+                key={v.id}
+                href={v.href}
+                className='text-white no-underline'
+              >
+                <li className='2xl:px-4 2xl:mr-8'>{v.title}</li>
+              </Link>
+            ))}
+          </ul>
+          
         </div>
       </div>
     </div>

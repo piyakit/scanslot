@@ -3,10 +3,16 @@ import Link from 'next/link'
 import React from 'react'
 
 const btnImg = ['/button-foot-login.png', '/button-foot-register.png']
+const monileMenu = [
+  {
+    id: 1,
+    img: '/',
+  },
+]
 
 const Footer = () => {
   return (
-    <footer className=' justify-center flex flex-col text-white'>
+    <div className=' justify-center flex flex-col text-white'>
       <div className='py-10 xs:mx-8 2xl:mx-[300px]'>
         <p className='text-[40px]'>Scanslot.io</p>
         <p className='xs:text-[16px]'>
@@ -52,7 +58,26 @@ const Footer = () => {
           Copyright 2023 Scanslot.io , All Rights Reserved.
         </p>
       </div>
-    </footer>
+      <div className='xs:block 2xl:hidden sm:hidden fixed z-[20] w-full bottom-2'>
+        <div className='flex flex-row justify-center w-full relative mb-[5%]'>
+          <div className='w-[42%] bottom-[15px]'>
+            <Image src='/icon-login.png' alt={''} width={164} height={56} />
+          </div>
+          <div className='w-[35%] absolute z-[20] bottom-[-10px]'>
+            <Image
+              src='/icon-register.png'
+              alt={''}
+              width={137}
+              height={106}
+              className=''
+            />
+          </div>
+          <div className='w-[42%] bottom-4'>
+            <Image src='/icon-line.png' alt={''} width={164} height={56} />
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 
