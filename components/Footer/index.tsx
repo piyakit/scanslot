@@ -48,7 +48,7 @@ const Footer = () => {
               key={i}
               className='hover:scale-[1.1] transition ease-in-out delay-150'
             >
-              <Image src={v} width={240} height={78} alt={''} key={i} />
+              <Image src={v} width={240} height={78} alt={''} key={i} unoptimized />
             </Link>
           ))}
         </div>
