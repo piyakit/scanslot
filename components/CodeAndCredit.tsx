@@ -17,8 +17,8 @@ const menu = [
 
 const CodeAndCredit = () => {
   return (
-    <div className='xs:mt-[6.5rem] 2xl:my-[2rem] w-full'>
-      <div className='flex flex-row justify-center gap-10'>
+    <div className='xs:mt-[6.5rem] 2xl:my-[2rem] w-full xs:px-5'>
+      <div className='flex flex-row justify-center 2xl:gap-10 xs:gap-2'>
         {menu.map((v) => (
           <Link
             href={v.href}
