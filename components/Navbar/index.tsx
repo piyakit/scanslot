@@ -21,23 +21,23 @@ const menuLeft = [
     title: 'สูตรสล๊อต PG',
     href: '',
   },
-  {
-    id: 3,
-    title: 'บทความ',
-    href: '',
-  },
-  {
-    id: 4,
-    title: 'ทดลองเล่น',
-    href: '',
-  },
+  // {
+  //   id: 3,
+  //   title: 'บทความ',
+  //   href: '',
+  // },
+  // {
+  //   id: 4,
+  //   title: 'ทดลองเล่น',
+  //   href: '',
+  // },
 ]
 const menuRight = [
-  {
-    id: 5,
-    title: 'ข้อมูลเกม',
-    href: '',
-  },
+  // {
+  //   id: 5,
+  //   title: 'ข้อมูลเกม',
+  //   href: '',
+  // },
   {
     id: 6,
     title: 'ติดต่อแอดมิน',
@@ -60,25 +60,25 @@ const menuMobile = [
     title: 'สูตรสล๊อต PG',
     href: '/',
   },
-  {
-    id: 3,
-    title: 'บทความ',
-    href: '',
-  },
-  {
-    id: 4,
-    title: 'ทดลองเล่น',
-    href: '',
-  },
-  {
-    id: 5,
-    title: 'ข้อมูลเกม',
-    href: '',
-  },
+  // {
+  //   id: 3,
+  //   title: 'บทความ',
+  //   href: '',
+  // },
+  // {
+  //   id: 4,
+  //   title: 'ทดลองเล่น',
+  //   href: '',
+  // },
+  // {
+  //   id: 5,
+  //   title: 'ข้อมูลเกม',
+  //   href: '',
+  // },
   {
     id: 6,
     title: 'ติดต่อแอดมิน',
-    href: '/contact-admin',
+    href: 'https://line.me/R/ti/p/@LUCK55',
   },
   {
     id: 7,
@@ -162,30 +162,54 @@ const Navbar = () => {
                 isOpen ? 'translate-x-0' : 'translate-x-full'
               } ease-in-out duration-500`}
             >
-              {menuMobile.map((menu) => (
-                <li key={menu.id} className='pt-2 text-[1.2rem]'>
+              {menuMobile.map((menu) =>
+                menu.id === 6 ? (
                   <Link
                     href={menu.href}
                     key={menu.id}
+                    target='_blank'
                     className='no-underline text-white'
                   >
-                    {menu.title}
+                    <li className='pt-2 text-[1.2rem]'>
+                      {menu.title}
+                    </li>
                   </Link>
-                </li>
-              ))}
+                ) : (
+                  <li key={menu.id} className='pt-2 text-[1.2rem]'>
+                    <Link
+                      href={menu.href}
+                      key={menu.id}
+                      className='no-underline text-white'
+                    >
+                      {menu.title}
+                    </Link>
+                  </li>
+                )
+              )}
             </ul>
           </div>
 
           <ul className='flex flex-row z-[1] xs:hidden 2xl:flex 2xl:mt-4'>
-            {menuRight.map((v) => (
-              <Link
-                key={v.id}
-                href={v.href}
-                className='text-white no-underline'
-              >
-                <li className='2xl:px-4 2xl:mr-8'>{v.title}</li>
-              </Link>
-            ))}
+            {menuRight.map((v) =>
+              v.id === 6 ? (
+                <Link
+                  key={v.id}
+                  href={v.href}
+                  target='_blank'
+                  className='text-white no-underline'
+                >
+                  <li className='2xl:px-4 2xl:mr-8'>{v.title}</li>
+                </Link>
+              ) : (
+                <Link
+                  key={v.id}
+                  href={v.href}
+                  className='text-white no-underline'
+                >
+                  <li className='2xl:px-4 2xl:mr-8'>{v.title}</li>
+                </Link>
+              )
+            )}
           </ul>
         </div>
       </div>
