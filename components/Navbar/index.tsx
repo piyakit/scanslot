@@ -6,6 +6,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { RxHamburgerMenu } from 'react-icons/rx'
 import { IoMdClose } from 'react-icons/io'
+import { FaFacebook } from 'react-icons/fa'
+import { BsInstagram } from 'react-icons/bs'
+import { FaTelegram } from 'react-icons/fa'
 
 const menuLeft = [
   {
@@ -114,6 +117,12 @@ const Navbar = () => {
                 className='w-[11vw] h-[11vw] xs:w-[30px] xs:h-[30px] xs:mt-9 2xl:hidden'
               />
             </Link>
+            <Link href='' target='_blank'>
+              <FaFacebook
+                color='#fff'
+                className='w-[11vw] h-[11vw] xs:w-[30px] xs:h-[30px] xs:mt-9 2xl:hidden'
+              />
+            </Link>
             <div className=' 2xl:top-[-100px]'>
               <Image
                 src='/nav-logo.png'
@@ -123,6 +132,18 @@ const Navbar = () => {
                 className='w-[11vw] h-[11vw] xs:w-[100px] xs:h-[100px] 2xl:w-[200px] 2xl:h-[200px]'
               />
             </div>
+            <Link href='' target='_blank'>
+              <BsInstagram
+                color='#fff'
+                className='w-[11vw] h-[11vw] xs:w-[30px] xs:h-[30px] xs:mt-9 2xl:hidden'
+              />
+            </Link>
+            <Link href='' target='_blank'>
+              <FaTelegram
+                color='#fff'
+                className='w-[11vw] h-[11vw] xs:w-[30px] xs:h-[30px] xs:mt-9 2xl:hidden'
+              />
+            </Link>
 
             {/* nav menu mobile */}
             <div className='xs:mt-9 xs:mr-0 z-50 2xl:hidden xs:block text-white'>
@@ -166,7 +187,6 @@ const Navbar = () => {
               </Link>
             ))}
           </ul>
-          
         </div>
       </div>
     </div>
