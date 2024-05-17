@@ -90,7 +90,20 @@ const menuMobile = [
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   return (
-    <div className=' xs:my-6 my-16 top-[-1px] relative z-[20] xs:fixed xs:px-4 2xl:relative xs:w-full flex justify-center'>
+    <div
+      className='
+        xs:my-6
+        my-16
+        top-[-1px]
+        relative
+        z-[20]
+        xs:fixed
+        xs:px-4
+        2xl:relative
+        xs:w-full
+        flex
+        justify-center xs:mt-0'
+    >
       <div
         className={`${style.navbar_bg} mt-16 flex justify-between items-center z-[30] xs:mt-4 2xl:w-[1344px] xs:w-full`}
       >
@@ -170,9 +183,7 @@ const Navbar = () => {
                     target='_blank'
                     className='no-underline text-white'
                   >
-                    <li className='pt-2 text-[1.2rem]'>
-                      {menu.title}
-                    </li>
+                    <li className='pt-2 text-[1.2rem]'>{menu.title}</li>
                   </Link>
                 ) : (
                   <li key={menu.id} className='pt-2 text-[1.2rem]'>
