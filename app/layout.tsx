@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar'
 import type { Metadata } from 'next'
 import { Prompt } from 'next/font/google'
 import './globals.css'
+import AnimationWrapper from '@/components/AnimationWrapper'
 
 const prompt = Prompt({
   subsets: ['latin'],
@@ -30,6 +31,7 @@ export default function RootLayout({
         <CodeAndCredit />
         <Container className='mx-52'>{children}</Container>
         <Footer />
+        {/* <AnimationWrapper /> */}
       </body>
     </html>
   )

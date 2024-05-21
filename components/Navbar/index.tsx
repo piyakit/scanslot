@@ -120,7 +120,7 @@ const Navbar = () => {
           </ul>
 
           <div className='flex flex-row justify-between xs:w-full 2xl:w-auto 2xl:justify-center z-[0] xs:px-4'>
-            <Link href='https://line.me/R/ti/p/@LUCK55' target='_blank'>
+            <Link href='https://lin.ee/uzDtE8t' target='_blank'>
               <Image
                 src='/line-icon-mobile.png'
                 alt={''}
@@ -129,7 +129,7 @@ const Navbar = () => {
                 className='w-[11vw] h-[11vw] xs:w-[30px] xs:h-[30px] xs:mt-9 2xl:hidden'
               />
             </Link>
-            <Link href='' target='_blank'>
+            <Link href='https://www.facebook.com/profile.php?id=61559856785119&is_tour_dismissed' target='_blank'>
               <FaFacebook
                 color='#fff'
                 className='w-[11vw] h-[11vw] xs:w-[30px] xs:h-[30px] xs:mt-9 2xl:hidden'
