@@ -9,7 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        bgimg: "url('https://scanslot.io/assets/img/site_background.jpg')",
+        bgimg: "url('/site_background.jpg')",
       },
       screens: {
         xs: '375px',
