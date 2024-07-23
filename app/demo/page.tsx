@@ -72,7 +72,12 @@ const Page = () => {
 
       <div className="grid grid-cols-6 gap-5">
         {GAMES_CARD_DEMO.map((e) => (
-          <GameCardDemo href={e.demoUrl} key={e.key} image={e.image} />
+          <GameCardDemo
+            href={e.demoUrl}
+            key={e.key}
+            image={e.image}
+            alt={e.alt}
+          />
         ))}
       </div>
 
