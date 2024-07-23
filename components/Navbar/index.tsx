@@ -20,23 +20,18 @@ const menuLeft = [
     title: 'สูตรสล๊อต PG',
     href: '',
   },
-  // {
-  //   id: 3,
-  //   title: 'บทความ',
-  //   href: '',
-  // },
-  // {
-  //   id: 4,
-  //   title: 'ทดลองเล่น',
-  //   href: '',
-  // },
+  {
+    id: 3,
+    title: 'บทความ',
+    href: '/article',
+  },
 ]
 const menuRight = [
-  // {
-  //   id: 5,
-  //   title: 'ข้อมูลเกม',
-  //   href: '',
-  // },
+  {
+    id: 4,
+    title: 'ทดลองเล่น',
+    href: '/demo',
+  },
   {
     id: 6,
     title: 'ติดต่อแอดมิน',
@@ -59,21 +54,16 @@ const menuMobile = [
     title: 'สูตรสล๊อต PG',
     href: '/',
   },
-  // {
-  //   id: 3,
-  //   title: 'บทความ',
-  //   href: '',
-  // },
-  // {
-  //   id: 4,
-  //   title: 'ทดลองเล่น',
-  //   href: '',
-  // },
-  // {
-  //   id: 5,
-  //   title: 'ข้อมูลเกม',
-  //   href: '',
-  // },
+  {
+    id: 3,
+    title: 'บทความ',
+    href: '/article',
+  },
+  {
+    id: 4,
+    title: 'ทดลองเล่น',
+    href: '/demo',
+  },
   {
     id: 6,
     title: 'ติดต่อแอดมิน',

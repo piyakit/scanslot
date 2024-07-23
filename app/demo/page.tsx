@@ -70,9 +70,14 @@ const Page = () => {
 
       {/* Game card */}
 
-      <div className="grid grid-cols-6 gap-5">
+      <div className="grid grid-cols-6 gap-5 xs:grid-cols-2">
         {GAMES_CARD_DEMO.map((e) => (
-          <GameCardDemo href={e.demoUrl} key={e.key} image={e.image} />
+          <GameCardDemo
+            href={e.demoUrl}
+            key={e.key}
+            image={e.image}
+            alt={e.alt}
+          />
         ))}
       </div>
 
@@ -92,7 +97,7 @@ const Page = () => {
       <div className="flex flex-col">
         <ArticleTitle title="ขั้นตอนและวิธีการใช้งาน ทดลองเล่นสล็อต บนเว็บไซต์ BOTSCAN SLOT" />
         <ArticleSubText children="ใครที่ยังสงสัยว่าตัวโปรแกรม ทดลองเล่นสล็อต จากทางเรา มีวิธีการและขั้นตอนอย่างไรบ้าง หากต้องการเล่น สล็อตออนไลน์แบบทดลอง ซึ่งวันนี้ทีมงานจากทางเว็บไซต์ Botscanslot จะมาอธิบายวิธีการเข้าใช้ ทดลองเล่นสล็อต กันแบบฟรีๆ ไม่มีค่าใช้จ่าย ไม่จำเป็นที่จะต้องสมัครสมาชิกก่อน พร้อมทั้งยังสามารถเข้าเล่นได้ตลอด 24 ชั่วโมงอีกด้วย ซึ่งมีวิธีการใช้งานง่ายๆ ดังนี้" />
-        <ul className="list-decimal text-white ml-20 mt-5">
+        <ul className="list-decimal text-white ml-20 mt-5 xs:ml-10">
           {listText1.map((e) => (
             <li key={e.key}>{e.label}</li>
           ))}
