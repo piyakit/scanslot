@@ -51,7 +51,7 @@ const Page = () => {
       </div>
       <div className="">
         <ArticleTitle title="ทดลองเล่นสล็อต pg ฟรีไม่ต้องฝาก คืออะไร ใครใช้บริการได้บ้าง" />
-        <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-row justify-center items-center xs:flex-col">
           <Image
             src="/article/article1.png"
             alt={''}
@@ -78,7 +78,7 @@ const Page = () => {
       </div>
       <div className="flex flex-col justify-center items-center">
         <ArticleTitle title="ทดลองเล่นสล็อต PG THAI มีข้อจำกัด 2 เรื่องทั้งเมนูและการถอนเงิน" />
-        <div className="flex flex-row justify-center items-center">
+        <div className="flex flex-row justify-center items-center xs:flex-col">
           <div className="flex flex-col">
             <ArticleSubText children="ข้อจำกัดที่เกิดขึ้นจากการใช้บริการโหมด ทดลองเล่นสล็อต pg ฟรีไม่ต้องฝาก ประการแรกคือผลกำไรที่ได้จากการทดลองเล่นนักเดิมพันถอนไม่ได้เพราะเป็นการใช้เงินสมมุติเดิมพัน กำไรทั้งหมดจะกลับเข้าสู่บัญชีเครดิตเงินสมมุตินั่นเอง" />
             <ArticleSubText
@@ -102,13 +102,13 @@ const Page = () => {
       <div className="flex flex-col">
         <ArticleTitle title="ทดลองเล่น เกมสล็อตฟรี 24 ชั่วโมงแนะนำเกมสล็อตลูกผสมน้องใหม่" />
         <ArticleSubText children="เกมสล็อตลูกผสมที่หาเล่นได้ในโหมด ทดลองเล่นสล็อต pg ฟรีไม่ต้องฝาก ตัวใหม่ที่ทางค่ายเพิ่งเปิดให้บริการเป็นเกมสล็อตคลาสสิคผสมกับวิดีโอสล็อตเกมที่สามารถสร้างผลกำไรได้อย่างรวดเร็วและมีโอกาสทำกำไรได้มากซึ่งจากการใช้ร่วมกับโปรแกรม AI botscanslot พบว่าเกมสล็อต TOTEM WONDERS มีอัตราชนะมากกว่า 80% ไม่ต่ำกว่า 20 ชั่วโมงต่อวัน รายละเอียดของเกมมีความน่าสนใจดังนี้" />
-        <ul className='text-white list-disc ml-20 mt-5'>
+        <ul className='text-white list-disc ml-20 mt-5 xs:ml-10'>
           {listText.map((e) => (
             <li key={e.key}>{e.label}</li>
           ))}
         </ul>
       </div>
-      <div className="flex flex-col">
+      <div className="flex flex-col mb-10">
         <ArticleTitle title="ใช้บริการ ทดลองเล่นสล็อต pg ฟรีไม่ต้องฝาก รองรับการทำงานทุกอุปกรณ์" />
         <ArticleSubText children="ระบบ ทดลองเล่นสล็อต pg ฟรีไม่ต้องฝาก หนึ่งในบริการเสริมจากเว็บตรงและค่ายสล็อตออนไลน์ที่ให้นักเดิมพันได้ทำความรู้จักเกมด้วยเงินสมมุติไม่ต้องใช้เงินทุนตัวเองในการทดลองเล่นสามารถสร้างความเข้าใจก่อนเดิมพันจริงได้เป็นอย่างดีและที่สำคัญสามารถใช้ทดสอบโปรแกรม AI สแกนสล็อตจาก botscanslot ได้ในเวลาเดียวกันอีกด้วย นักเดิมพันที่สนใจสามารถสมัครเข้าเป็นสมาชิกเว็บตรงที่มีบริการแจกสูตร AI เกมพนันออนไลน์และโหมด DEMO ได้ฟรีแล้ววันนี้ 24 ชั่วโมง" />
       </div>
