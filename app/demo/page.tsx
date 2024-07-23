@@ -59,6 +59,9 @@ const listText2 = [
 
 const Page = () => {
   const year = new Date().getFullYear()
+  const handleClickDetail = (id: any) => {
+    console.log('open detail games id:', id)
+  }
   return (
     <>
       <div className="flex flex-col">
@@ -75,6 +78,7 @@ const Page = () => {
             key={e.key}
             image={e.image}
             alt={e.alt}
+            id={e.key}
           />
         ))}
       </div>
