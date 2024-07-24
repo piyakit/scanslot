@@ -1,0 +1,17 @@
+.title {
+  padding: 0.75rem 1.25rem;
+  background: radial-gradient(circle, #000 0, rgba(11, 42, 72, 0) 100%);
+  border-style: solid;
+  border-width: 2px;
+  border-top: none;
+  border-left: 0;
+  text-align: center;
+  border-right: 0;
+  border-image: linear-gradient(
+      90deg,
+      rgba(46, 0, 69, 0) 4.17%,
+      #fec100 50.52%,
+      rgba(39, 0, 63, 0) 100%
+    )
+    1;
+}
