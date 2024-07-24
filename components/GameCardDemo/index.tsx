@@ -15,9 +15,9 @@ const GameCardDemo: React.FC<GameCardDemoProps> = ({ image, href, alt, id }) => 
       <Link href={href} target="_blank">
         <img src={image} alt={alt} width={170} height={296} />
       </Link>
-      <Link href={`/demo/${id}`} target='_blank' className='text-white'>
+      {/* <Link href={`/demo/${id}`} target='_blank' className='text-white'>
         detail
-      </Link>
+      </Link> */}
     </div>
   )
 }
