@@ -35,7 +35,7 @@ export default async function Page({ params }: { params: { id: string } }) {
       <Link href={demoUrl} target="_blank" className="">
         <Button
           variant="danger"
-          className="bg-pink-500 w-full my-5 py-4 text-white text-[22px] rounded-full"
+          className="bg-pink-500 w-full my-5 py-1 text-white text-[22px] rounded-full border-4"
         >
           {demoTextBtn}
         </Button>
