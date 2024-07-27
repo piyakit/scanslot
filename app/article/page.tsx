@@ -51,7 +51,7 @@ const Page = () => {
       </div>
       <div className="">
         <ArticleTitle title="ทดลองเล่นสล็อต pg ฟรีไม่ต้องฝาก คืออะไร ใครใช้บริการได้บ้าง" />
-        <div className="flex flex-row justify-center items-center xs:flex-col">
+        <div className="flex 2xl:flex-row justify-center items-center xs:flex-col">
           <Image
             src="/article/article1.png"
             alt={''}
@@ -78,7 +78,7 @@ const Page = () => {
       </div>
       <div className="flex flex-col justify-center items-center">
         <ArticleTitle title="ทดลองเล่นสล็อต PG THAI มีข้อจำกัด 2 เรื่องทั้งเมนูและการถอนเงิน" />
-        <div className="flex flex-row justify-center items-center xs:flex-col">
+        <div className="flex 2xl:flex-row justify-center items-center xs:flex-col">
           <div className="flex flex-col">
             <ArticleSubText children="ข้อจำกัดที่เกิดขึ้นจากการใช้บริการโหมด ทดลองเล่นสล็อต pg ฟรีไม่ต้องฝาก ประการแรกคือผลกำไรที่ได้จากการทดลองเล่นนักเดิมพันถอนไม่ได้เพราะเป็นการใช้เงินสมมุติเดิมพัน กำไรทั้งหมดจะกลับเข้าสู่บัญชีเครดิตเงินสมมุตินั่นเอง" />
             <ArticleSubText
