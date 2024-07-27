@@ -29,7 +29,9 @@ export default function RootLayout({
         <link rel='icon' href='/logo.png' sizes='any' />
         <Navbar />
         <CodeAndCredit />
-        <Container className='mx-52 xl:mx-60 lg:mx-[15rem] md:mx-[10rem]'>{children}</Container>
+        <Container 
+          className='mx-52 xl:mx-[10rem] lg:mx-[5rem] md:mx-[5rem] 2xl:mx-[20rem]
+          '>{children}</Container>
         <Footer />
         {/* <AnimationWrapper /> */}
       </body>

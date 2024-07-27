@@ -35,8 +35,8 @@ const listText = [
 const Page = () => {
   return (
     <>
-      <ArticleTitle title="ทดลองเล่นสล็อต pg ฟรีไม่ต้องฝาก บริการดีมีในเว็บตรงที่นี่" className='mb-8' />
-      <div className="mb-10">
+      <ArticleTitle title="ทดลองเล่นสล็อต pg ฟรีไม่ต้องฝาก บริการดีมีในเว็บตรงที่นี่" className='' />
+      <div className="2xl:mb-8 xs:my-1">
         <Image src="/article/1.jpg" alt={''} width={1024} height={576} />
       </div>
       <div className="text-white">

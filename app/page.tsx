@@ -10,16 +10,17 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <div
-      className='
+      className="
           grid
-          lg:grid-cols-3
+          lg:grid-cols-2
           md:grid-cols-2
           sm:grid-cols-2
           xl:grid-cols-3
           2xl:grid-cols-3
           py-4
           gap-4
-          justify-items-center justify-center items-center content-center z-[1]'
+          justify-items-center justify-center items-center content-center z-[1]
+          "
     >
       {GAMES.map((game) => (
         <GameCard

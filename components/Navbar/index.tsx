@@ -160,7 +160,7 @@ const Navbar = () => {
               )}
             </div>
             <ul
-              className={`top-0 right-0 fixed bg-[#0d830a] w-[300px] h-full pt-20 pl-8 ${
+              className={`top-0 right-0 fixed bg-[#0d830a] w-[180px] h-full pt-20 pl-8 ${
                 isOpen ? 'translate-x-0' : 'translate-x-full'
               } ease-in-out duration-500`}
             >
