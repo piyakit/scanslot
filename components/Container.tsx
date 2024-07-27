@@ -10,7 +10,7 @@ const Container: React.FC<ContainerProps> = ({ children, className }) => {
     <div className={cn('2xl:mx-[28rem] xs:mx-4', className)}>
       <div
         className={cn(
-          'border-purple-600 border-8 rounded-3xl shadow-[inset_0px_0px_50px_30px_#8639c1] px-8 max-w-full z-[-5]'
+          'border-yellow-500 border-8 rounded-3xl shadow-[inset_0px_0px_20px_20px_#faf089] px-8 max-w-full z-[-5]'
         )}
       >
         {children}

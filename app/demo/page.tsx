@@ -59,6 +59,9 @@ const listText2 = [
 
 const Page = () => {
   const year = new Date().getFullYear()
+  const handleClickDetail = (id: any) => {
+    console.log('open detail games id:', id)
+  }
   return (
     <>
       <div className="flex flex-col">
@@ -68,13 +71,14 @@ const Page = () => {
         <ArticleSubText children="แนะนำสำหรับนักปั่นสล็อต ทดลองเล่นสล็อต แบบฟรีๆ ไม่ต้องสมัครสมาชิกก่อน มีเครดิตให้ทดลองเล่นก่อน พร้อมทั้งรองรับมือถือทุกรุ่น ระบบทดลองเล่นจากทีมงาน SLOT ลื่นไหล ไม่มีสะดุดอย่างแน่นอน เพื่อให้ทุกท่านพัฒนาทักษะการเดิมพันเกมสล็อต และ นำไปสู่การทำกำไรจากเกมสล็อต ได้รวดเร็วยิ่งขึ้น ซึ่งทางเว็บไซต์ BOTSCANSLOT นั้นได้เปิดบริการ ทดลองเล่นสล็อต ตลอด 24 ชั่วโมง เพื่อให้ท่านที่มีใจรักในการปั่นสล็อต ไม่ว่าจะเป็นเซียนนักปั่นหรือ มือใหม่ ก็ยังสามารถเข้าใช้งานอย่างสะดวก รวดเร็ว" />
       </div>
 
-      <div className="grid 2xl:grid-cols-6 gap-2 xs:grid-cols-2 xs:gap-5">
+      <div className="grid 2xl:grid-cols-6 gap-2 xs:grid-cols-2 xs:gap-5 xl:grid-cols-6 lg:grid-cols-5 md:grid-cols-4">
         {GAMES_CARD_DEMO.map((e) => (
           <GameCardDemo
             href={e.demoUrl}
             key={e.key}
             image={e.image}
             alt={e.alt}
+            id={e.key}
           />
         ))}
       </div>
