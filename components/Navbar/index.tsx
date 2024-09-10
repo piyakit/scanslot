@@ -89,6 +89,7 @@ const Navbar = () => {
         xs:fixed
         xs:px-4
         2xl:relative
+        lg:relative
         xs:w-full
         flex
         justify-center xs:mt-0'
@@ -97,7 +98,7 @@ const Navbar = () => {
         className={`${style.navbar_bg} mt-16 flex justify-between items-center z-[30] xs:mt-4 2xl:w-[1344px] xs:w-full`}
       >
         <div className='flex flex-row justify-between w-full items-center'>
-          <ul className='flex flex-row z-[1] xs:hidden 2xl:flex 2xl:mt-4 2xl:pr-8 2xl:pl-8'>
+          <ul className='flex flex-row z-[1] xs:hidden 2xl:flex lg:flex 2xl:mt-4 2xl:pr-8 2xl:pl-8 lg:pl-[3rem]'>
             {menuLeft.map((v) => (
               <Link
                 key={v.id}
@@ -109,8 +110,8 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <div className='flex flex-row justify-between xs:w-full 2xl:w-auto 2xl:justify-center z-[0] xs:px-4'>
-            <Link href='https://lin.ee/uzDtE8t' target='_blank'>
+          <div className='flex flex-row justify-between xs:w-full 2xl:w-auto lg:w-auto 2xl:justify-center z-[0] xs:px-4'>
+            <Link href='https://lin.ee/uzDtE8t' target='_blank' className='lg:hidden'>
               <Image
                 src='/line-icon-mobile.png'
                 alt={''}
@@ -119,7 +120,7 @@ const Navbar = () => {
                 className='w-[11vw] h-[11vw] xs:w-[30px] xs:h-[30px] xs:mt-9 2xl:hidden'
               />
             </Link>
-            <Link href='https://www.facebook.com/profile.php?id=61559856785119&is_tour_dismissed' target='_blank'>
+            <Link href='https://www.facebook.com/profile.php?id=61559856785119&is_tour_dismissed' target='_blank' className='lg:hidden'>
               <FaFacebook
                 color='#fff'
                 className='w-[11vw] h-[11vw] xs:w-[30px] xs:h-[30px] xs:mt-9 2xl:hidden'
@@ -131,16 +132,16 @@ const Navbar = () => {
                 alt={''}
                 width={200}
                 height={200}
-                className='w-[11vw] h-[11vw] xs:w-[100px] xs:h-[100px] 2xl:w-[200px] 2xl:h-[200px]'
+                className='w-[11vw] h-[11vw] xs:w-[100px] xs:h-[100px] 2xl:w-[200px] 2xl:h-[200px] lg:h-[10rem] lg:w-[10rem]'
               />
             </div>
-            <Link href='' target='_blank'>
+            <Link href='' target='_blank' className='lg:hidden'>
               <BsInstagram
                 color='#fff'
                 className='w-[11vw] h-[11vw] xs:w-[30px] xs:h-[30px] xs:mt-9 2xl:hidden'
               />
             </Link>
-            <Link href='' target='_blank'>
+            <Link href='' target='_blank' className='lg:hidden'>
               <FaTelegram
                 color='#fff'
                 className='w-[11vw] h-[11vw] xs:w-[30px] xs:h-[30px] xs:mt-9 2xl:hidden'
@@ -148,7 +149,7 @@ const Navbar = () => {
             </Link>
 
             {/* nav menu mobile */}
-            <div className='xs:mt-9 xs:mr-0 z-50 2xl:hidden xs:block text-white'>
+            <div className='xs:mt-9 xs:mr-0 z-50 2xl:hidden xs:block text-white lg:hidden'>
               {isOpen ? (
                 <IoMdClose
                   onClick={() => setIsOpen(!isOpen)}
@@ -189,7 +190,7 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <ul className='flex flex-row z-[1] xs:hidden 2xl:flex 2xl:mt-4'>
+          <ul className='flex flex-row z-[1] xs:hidden 2xl:flex lg:flex 2xl:mt-4 2xl:pr-8 2xl:pl-8 gap-5 lg:pr-[3rem]'>
             {menuRight.map((v) =>
               v.id === 6 ? (
                 <Link
