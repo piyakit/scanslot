@@ -15,7 +15,7 @@
   background-position: 50% 50% !important;
   background-size: cover !important;
   transform: rotate(180deg) scaleX(-1);
-  -webkit-mask-image: -webkit-gradient(
+  mask-image: -webkit-gradient(
     linear,
     left top,
     left bottom,
