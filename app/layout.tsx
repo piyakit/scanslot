@@ -30,10 +30,9 @@ export default function RootLayout({
         <Navbar />
         <CodeAndCredit />
         <Container 
-          className='mx-52 xl:mx-[10rem] lg:mx-[5rem] md:mx-[9rem] 2xl:mx-[20rem]
+          className='mx-52 xl:mx-[15rem] lg:mx-[5rem] md:mx-[9rem] 2xl:mx-[20rem]
           '>{children}</Container>
         <Footer />
-        {/* <AnimationWrapper /> */}
       </body>
     </html>
   )
