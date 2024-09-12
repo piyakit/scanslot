@@ -38,7 +38,7 @@ const GameCard: React.FC<GameCardProps> = ({
       : 'success'
   return (
     <div
-      className={`h-[400px] w-[325px] relative block xs:w-[300px] z-[-1] ${
+      className={`2xl:h-[400px] 2xl:w-[325px] lg:h-[25rem] lg:w-[15rem] relative block xs:w-[300px] z-[-1] ${
         percent >= 90 ? 'shake' : ''
       }`}
       style={{
